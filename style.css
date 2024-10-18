@@ -1,0 +1,194 @@
+header {
+  width: 1280px;
+  height: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 52px;
+  position: absolute;
+  z-index: 1;
+  align-items: center;
+}
+.logo img {
+  height: 20px;
+}
+.logo h1 {
+  color: white;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  width: 50%;
+  position: absolute;
+  left: 0;
+}
+
+.link nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  justify-content: space-evenly;
+}
+
+.link nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 16px;
+  letter-spacing: -2%;
+  align-items: center;
+  border: 1px solid #fbfbfb66;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.shop {
+  background-color: #7a3145;
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -1.5%;
+  color: #fbfbfb;
+}
+.bcs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.backgroundLeft {
+  width: 50%;
+  background-color: #576f35;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.backgroundRight {
+  background-image: url(image\ 3.png);
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  width: 502px;
+  height: 562px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  left: 10%;
+  top: 10%;
+}
+.text h1 {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 76px;
+  letter-spacing: -1.5%;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fbfbfb;
+}
+
+.lines {
+    display: block;
+}
+
+.line1 {
+  width: 30px;
+  height: 3px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+.line2 {
+  width: 24px;
+  height: 3px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  margin: 3px 0px;
+}
+.line3 {
+  width: 30px;
+  height: 3px;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+}
+
+.line2 {
+  margin: 3px 0px;
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  header {
+    width: 768px;
+    height: 1024px;
+  }
+  .navbar{
+    position: relative;
+  }
+  .lines {
+    display: block;
+    position: absolute;
+    right: 50px;
+    z-index: 3;
+  }
+  .link {
+    display: none;
+  }
+  .backgroundLeft {
+    width: 100%;
+    height: 50%;
+  }
+  .backgroundRight {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+  }
+  
+  .text {
+    width: 704px;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .text p {
+    width: 603px;
+    height: 60px;
+  }
+  .text h1 {
+    width: 704px;
+    height: 228px;
+    font-weight: 600;
+    font-size: 76px;
+    line-height: 76px;
+    letter-spacing: -1.5%;
+  }
+}
