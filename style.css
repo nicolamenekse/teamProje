@@ -118,7 +118,7 @@ header {
 }
 
 .lines {
-    display: block;
+    display: none;
 }
 
 .line1 {
