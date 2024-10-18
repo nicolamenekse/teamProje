@@ -14,7 +14,7 @@ header {
   z-index: 1;
   align-items: center;
 }
-.logo img {
+/* .logo img {
   height: 20px;
 }
 .logo h1 {
@@ -25,11 +25,21 @@ header {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  align-items: center;
   width: 50%;
   position: absolute;
   left: 0;
+} */
+
+.logo{
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 6%;
 }
+
+
+
 
 .link nav ul {
   display: flex;
@@ -57,7 +67,7 @@ header {
 }
 
 .shop {
-  background-color: #7a3145;
+  background-color: #7A3145;
   font-family: "Inter Tight", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -65,6 +75,11 @@ header {
   letter-spacing: -1.5%;
   color: #fbfbfb;
 }
+
+.shop:hover{
+background-color: #622133;
+}
+
 .bcs {
   display: flex;
   width: 100%;
@@ -142,11 +157,67 @@ header {
   border-radius: 10px;
 }
 
-.line2 {
-  margin: 3px 0px;
+
+
+@media screen and (max-width:375px) {
+  header {
+    width: 375px;
+    height: 812px;
+  }
+  .navbar{
+    position: relative;
+  }
+  .lines {
+    display: block;
+    position: absolute;
+    right: 50px;
+    z-index: 3;
+  }
+  .link {
+    display: none;
+  }
+  .backgroundLeft {
+    width: 100%;
+    height: 50%;
+  }
+  .backgroundRight {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+  }
+  
+  .text {
+    width: 335px;
+    height: 302px;
+    display: flex;
+    flex-direction: column;
+  }
+  .text p {
+    width: 335px;
+    height: 90px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: -80px;
+  }
+  .text h1 {
+    width: 335px;
+    height: 192px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.5%;
+  }
 }
 
+
 @media screen and (min-width: 376px) and (max-width: 768px) {
+
+.backgroundRight{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
   header {
     width: 768px;
     height: 1024px;
@@ -160,7 +231,12 @@ header {
     right: 50px;
     z-index: 3;
   }
-  .link {
+
+.link{
+  display: none;
+}
+  
+  .shop{
     display: none;
   }
   .backgroundLeft {
